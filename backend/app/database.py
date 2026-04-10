@@ -19,6 +19,8 @@ class Base(DeclarativeBase):
 
 
 def init_db():
+    import app.models  # noqa: F401 — ensure models are registered with Base.metadata
+
     Base.metadata.create_all(engine)
 
 
