@@ -24,8 +24,9 @@
           <ThemeToggle />
         </div>
       </header>
-      <main class="px-2">
+      <main class="px-2 space-y-8">
         <RunningJobs />
+        <JobHistory />
       </main>
     </div>
   </div>
@@ -36,6 +37,7 @@ import { ref, onMounted } from "vue";
 import LoginPage from "./components/LoginPage.vue";
 import ThemeToggle from "./components/ThemeToggle.vue";
 import RunningJobs from "./components/RunningJobs.vue";
+import JobHistory from "./components/JobHistory.vue";
 
 const authenticated = ref(false);
 const checking = ref(true);

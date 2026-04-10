@@ -70,6 +70,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
+import { toUtcDate, formatDate, formatDuration } from "../utils/time";
 
 interface Job {
   id: string;
@@ -98,25 +99,12 @@ async function fetchJobs() {
   }
 }
 
-// Robyn serializes naive datetimes without a timezone suffix — append Z so
-// the browser treats them as UTC rather than local time.
-function toUtcDate(iso: string): Date {
-  return new Date(iso.endsWith("Z") ? iso : iso + "Z");
-}
-
 function formatElapsed(startedAt: string): string {
   const elapsed = Math.max(
     0,
     Math.floor((Date.now() - toUtcDate(startedAt).getTime()) / 1000),
   );
-  const h = Math.floor(elapsed / 3600);
-  const m = Math.floor((elapsed % 3600) / 60);
-  const s = elapsed % 60;
-  return `${String(h).padStart(2, "0")}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
-}
-
-function formatDate(iso: string): string {
-  return toUtcDate(iso).toLocaleString();
+  return formatDuration(elapsed);
 }
 
 const lastUpdatedLabel = ref("");
