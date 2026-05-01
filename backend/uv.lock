@@ -142,13 +142,13 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "robyn", specifier = ">=0.82.0" },
+    { name = "robyn", specifier = ">=0.84.0" },
     { name = "sqlalchemy", specifier = ">=2.0" },
 ]
 
 [[package]]
 name = "robyn"
-version = "0.82.1"
+version = "0.84.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "inquirerpy" },
@@ -159,20 +159,20 @@ dependencies = [
     { name = "watchdog" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d6/88/f2b73878c2d9adad40ea2547e259940c1e23debd0290e431bcdb895ff3ca/robyn-0.82.1-cp313-cp313-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl", hash = "sha256:757053d91c6671bf5032e2eca44628876ca9e26bd41d069bd6997daaa6e5bc34", size = 3300545, upload-time = "2026-03-27T03:18:39.271Z" },
-    { url = "https://files.pythonhosted.org/packages/be/7e/c738a7a50b7302ec5f2e20b07e4a0e4cb2ccdb2dc1864e53a16f3b0ebb7d/robyn-0.82.1-cp313-cp313-macosx_10_12_x86_64.whl", hash = "sha256:7bcdcf57a229b0c0e324541828799da5707d39c4d845eb9e09e12204cb863028", size = 1772637, upload-time = "2026-03-27T03:18:40.926Z" },
-    { url = "https://files.pythonhosted.org/packages/fd/c8/3aaa2bfa7925c85c450c57d4c03ad0403a0a19149f5338f349cae37e40c2/robyn-0.82.1-cp313-cp313-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:c7f7c7dc6cf3093526a90bc1150675855bfd3bdce814833278aefbb0a4653507", size = 1902234, upload-time = "2026-03-27T03:18:42.47Z" },
-    { url = "https://files.pythonhosted.org/packages/a0/9a/72076484de824d2a7938576f30c0bbfdd87903e2d56d7e6634be21db1016/robyn-0.82.1-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:7d81d52614f461baac78b84ce8cb884002fb2c1f29d73fd7d40b2b07a1b962bd", size = 1804448, upload-time = "2026-03-27T03:18:43.712Z" },
-    { url = "https://files.pythonhosted.org/packages/08/db/94ad3a3c60daa7eba5d593c77d22b50ad100a8912b0ecff38fe9cb67f76e/robyn-0.82.1-cp313-cp313-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:1cd8036f2fc9fa7ba81e01651472b329c3015632c41793ab0fb67db3c4a74e12", size = 1833246, upload-time = "2026-03-27T03:18:44.95Z" },
-    { url = "https://files.pythonhosted.org/packages/c4/23/a744efb788490f6fa2e319c89643268f3029e1a9033a3df6e900c93512cb/robyn-0.82.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:79d7b52a753de42f9611ed72a491ad3cbb8c84b830aae9abd627d135b68f7da8", size = 1895542, upload-time = "2026-03-27T03:18:46.431Z" },
-    { url = "https://files.pythonhosted.org/packages/11/f4/89829812f1837764cc81e4e64553af67fa3c47b4916ba1711be97ce2fa29/robyn-0.82.1-cp313-cp313-win32.whl", hash = "sha256:81a23e4b6cbd9e748114b215fff19f0da31e76d2ba3a03b2108ba42d01989582", size = 1646210, upload-time = "2026-03-27T03:18:48.086Z" },
-    { url = "https://files.pythonhosted.org/packages/2d/9f/c6607656bec2175d29ef5488a02e27bed00bb49c548472b41e0a896f74a7/robyn-0.82.1-cp313-cp313-win_amd64.whl", hash = "sha256:3ec3462e4d5b8ec927c7685e6867e9c11bd8150ef4b3d8a53629923db1a3e72e", size = 1725934, upload-time = "2026-03-27T03:18:49.701Z" },
-    { url = "https://files.pythonhosted.org/packages/1f/47/290430f69318496b58a3a6a3956f889e02027fc2bd74406bacaba910321e/robyn-0.82.1-cp314-cp314-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl", hash = "sha256:d79c205884f8c41fa4e84e516e9d053ae07a21efd4faf8ec6fe3ab79827edf92", size = 3303933, upload-time = "2026-03-27T03:18:50.888Z" },
-    { url = "https://files.pythonhosted.org/packages/08/d4/862aabe7ce7b58d7f1edc7d7f78046c10ba80b1a6a250287f9ed80998659/robyn-0.82.1-cp314-cp314-macosx_10_12_x86_64.whl", hash = "sha256:8580fb78f1703156be172e8149d58124e425e80e8fb75f7f3758937805cf7f15", size = 1774222, upload-time = "2026-03-27T03:18:52.177Z" },
-    { url = "https://files.pythonhosted.org/packages/4c/e2/32c2823803870958c6b1157c9ed9bac93df6741ccd38d960c7edf3df0ece/robyn-0.82.1-cp314-cp314-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:a2f6c31b7326b329ce81bf382a06682a78b2d53975726b45d42caf9472b05b88", size = 1902288, upload-time = "2026-03-27T03:18:53.735Z" },
-    { url = "https://files.pythonhosted.org/packages/77/0d/92f7808c0024bd83171998603deda9988d95dedaf921a1848e636884dde0/robyn-0.82.1-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4c7c3be3d24efff3b9dea20fb8d02a4f0922bb41eaf498ac335e136e928d6464", size = 1897280, upload-time = "2026-03-27T03:18:55.318Z" },
-    { url = "https://files.pythonhosted.org/packages/fb/6b/169a935045972a1db583ef0951d7ce5a3fe6f13b43a5b09b305141bf771e/robyn-0.82.1-cp314-cp314-win32.whl", hash = "sha256:b63aa83f5ff0b35e48d9b3a7ef6fb4246dca559b1f7147c14147418d9efda203", size = 1649081, upload-time = "2026-03-27T03:18:56.521Z" },
-    { url = "https://files.pythonhosted.org/packages/bd/1f/045bce67c22f189dd911e680ca8185c83456dacd4f1216683a542cae007a/robyn-0.82.1-cp314-cp314-win_amd64.whl", hash = "sha256:a92da7c952fd4c309575140622004d88bd8c1cf29c39a798091f0a21ae8a042b", size = 1729123, upload-time = "2026-03-27T03:18:57.708Z" },
+    { url = "https://files.pythonhosted.org/packages/ec/e9/66463914961ce1c36a8cfa49bcd0eda28458a03b98505fb650085aa70542/robyn-0.84.0-cp313-cp313-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl", hash = "sha256:b375ce9409dd316cc246e883cf4cd2e4e632da738230fe156c1adad5d27e3e4e", size = 3317073, upload-time = "2026-04-26T01:48:13.442Z" },
+    { url = "https://files.pythonhosted.org/packages/20/c3/49176bbef004058c8f7c39ec26f61126fc88c2b613fd36ebb9acfd0df224/robyn-0.84.0-cp313-cp313-macosx_10_12_x86_64.whl", hash = "sha256:584aac323bf62cb2463c7a39273ba356baf745fd43a48a0318ce775d70cc38c3", size = 1777105, upload-time = "2026-04-26T01:48:15.232Z" },
+    { url = "https://files.pythonhosted.org/packages/aa/b6/8d52df8205e6a72de069bee5e0fe251ed7657301321a4e72858508f4e6fd/robyn-0.84.0-cp313-cp313-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:896c1d4198bb43f3623929f30478a1dd63061a3eb5e8baa2339842a58d60fe02", size = 1907672, upload-time = "2026-04-26T01:48:16.921Z" },
+    { url = "https://files.pythonhosted.org/packages/31/3c/ac2214f5c22bb4efb7d115f1973ff8c0095d3faabd35691b4bbd7e01d38d/robyn-0.84.0-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:87aa0660e6367cc967e3e7e3fcb4c2496f0931675363b9af677e62c0208d1af1", size = 1821845, upload-time = "2026-04-26T01:48:18.355Z" },
+    { url = "https://files.pythonhosted.org/packages/a3/ef/a1e60662ecc290c56b0b078a0524e0d4f2f432c6fee03ba363d0ef8d2684/robyn-0.84.0-cp313-cp313-manylinux_2_17_armv7l.manylinux2014_armv7l.whl", hash = "sha256:c7a1a0b2337cf85d8b5589a626d3d8278c245d832732b2a81865c9961daa6968", size = 1852461, upload-time = "2026-04-26T01:48:20.305Z" },
+    { url = "https://files.pythonhosted.org/packages/7a/14/163743fb04f1a227bebddd84003c2f7322b87e052470f8f0bae43752c55f/robyn-0.84.0-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f80318e1bee064cd3f8b9684a2b5f9423165af75eaf65e1cbb609ed0101174ec", size = 1896389, upload-time = "2026-04-26T01:48:22.087Z" },
+    { url = "https://files.pythonhosted.org/packages/c4/77/8a72e3ae3560a90b904c0b271721efcc1f58ad6773203d4198f475383bc4/robyn-0.84.0-cp313-cp313-win32.whl", hash = "sha256:bf5a3633b2842f2fb729af55326eba5077375cea5e1a72c428031146f05c0327", size = 1649705, upload-time = "2026-04-26T01:48:23.572Z" },
+    { url = "https://files.pythonhosted.org/packages/09/6c/5640e357003f06ad5824dfa9ef41cbe249af7d3c08e520b35b0508e46d3b/robyn-0.84.0-cp313-cp313-win_amd64.whl", hash = "sha256:49d4c016c755a830bead4115a1b2044c1e5d4bc66fa64c134eb1e4edbfd7d8ba", size = 1719413, upload-time = "2026-04-26T01:48:25.587Z" },
+    { url = "https://files.pythonhosted.org/packages/0f/a7/5b47b45d5e49005033f41e5ec7a06b2a1d3d92beb77b3fd081c083d0ff8e/robyn-0.84.0-cp314-cp314-macosx_10_12_x86_64.macosx_11_0_arm64.macosx_10_12_universal2.whl", hash = "sha256:a8e9f6b0d0bb444b929cc069ab0be46fc09eed3fb8630d13d65cd4d5f2512ac6", size = 3320415, upload-time = "2026-04-26T01:48:27.73Z" },
+    { url = "https://files.pythonhosted.org/packages/b7/18/c5a8365e9d4fa61442118b791b096d3e40e0c5a555592be29db8c8017461/robyn-0.84.0-cp314-cp314-macosx_10_12_x86_64.whl", hash = "sha256:d1df93e896ec1f3117388816d38a4b1956f62f467d5e40c5cb870597a9df6985", size = 1778128, upload-time = "2026-04-26T01:48:29.683Z" },
+    { url = "https://files.pythonhosted.org/packages/7e/9d/2fb7b0ac90535e589adaf0419dbbd4f2e8a33061ade25c62f58320338cfa/robyn-0.84.0-cp314-cp314-manylinux_2_12_i686.manylinux2010_i686.whl", hash = "sha256:d8a750497d330fddf3fefc9521c9d36b86546e21aeb83c959761b97fc7c49b90", size = 1907791, upload-time = "2026-04-26T01:48:31.44Z" },
+    { url = "https://files.pythonhosted.org/packages/f6/81/a2960ba935cddfd0d1623e97dc7dd0e2421e023c15840bbff8f5f405c514/robyn-0.84.0-cp314-cp314-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:098ae975c14e54bc91c0e495f4fb7336e0e0ddbc860ee8fbb02924bc60468e3c", size = 1897456, upload-time = "2026-04-26T01:48:33.206Z" },
+    { url = "https://files.pythonhosted.org/packages/09/c0/9b8a1bdad3e1c85f464e4470f2ddbba8ac5e28ae282d8b008d1d35216f12/robyn-0.84.0-cp314-cp314-win32.whl", hash = "sha256:6e2b2efca4e4bde37fa0dd5842c30604bf2ac61f967098594980902685914b0e", size = 1652523, upload-time = "2026-04-26T01:48:34.942Z" },
+    { url = "https://files.pythonhosted.org/packages/19/03/ebdde0d9d1c8598885372d8289aa51a29c380d97bdfd276ec63563741960/robyn-0.84.0-cp314-cp314-win_amd64.whl", hash = "sha256:d720ad38df5feca57c1d537ee2704f37e178e81f1163a1b7e0024edbab06910b", size = 1722771, upload-time = "2026-04-26T01:48:36.582Z" },
 ]
 
 [[package]]
