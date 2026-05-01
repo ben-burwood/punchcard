@@ -21,7 +21,7 @@ COPY backend/pyproject.toml backend/uv.lock* ./
 RUN uv sync --no-dev --no-install-project
 
 # Stage 3: Runtime
-FROM python:3.13-slim-bookworm AS runtime
+FROM python:3.14-slim-bookworm AS runtime
 
 WORKDIR /app
 
