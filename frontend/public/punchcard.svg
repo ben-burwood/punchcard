@@ -1,11 +1,10 @@
 <svg width="120" height="100" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
-  <g fill="black" stroke="black" stroke-width="2" stroke-linejoin="miter">
-    <polygon points="20,60 38,42 55,38 72,36 88,45 95,55 88,68 70,75 55,82 38,78 28,70" />
-    <polygon points="70,25 85,20 95,30 85,40 70,35" />
-    <polygon points="95,30 115,35 95,40" />
-    <polygon points="20,60 10,50 15,72" />
-    <polygon points="45,55 58,50 68,58 60,66 48,62" fill="none"/>
-    <polyline points="38,78 45,68 55,65" fill="none"/>
-    <circle cx="83" cy="30" r="2.5" fill="white" stroke="black" stroke-width="1"/>
+  <g fill="black" stroke="black" stroke-width="2" stroke-linejoin="miter" stroke-linecap="round">
+    <ellipse cx="60" cy="20" rx="18" ry="7" />
+    <rect x="54" y="22" width="12" height="18" />
+    <rect x="38" y="40" width="44" height="12" rx="2" />
+    <rect x="46" y="52" width="28" height="14" />
+    <line x1="20" y1="82" x2="100" y2="82" stroke-width="3" />
+    <line x1="28" y1="88" x2="92" y2="88" stroke-width="2" stroke-dasharray="4 3" />
   </g>
 </svg>
