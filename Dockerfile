@@ -1,42 +1,40 @@
-# Stage 1: Build Frontend
-FROM node:latest AS build-frontend
+FROM node:latest AS build-vue
 
 WORKDIR /app/frontend
 
-COPY frontend/package.json frontend/package-lock.json* ./
+COPY frontend/package*.json ./
 
-RUN npm ci
+RUN npm install
 
-COPY frontend/ ./
+COPY frontend/. .
 
 RUN npm run build
 
-# Stage 2: Build Backend
-FROM ghcr.io/astral-sh/uv:python3.13-bookworm-slim AS build-backend
+FROM --platform=$BUILDPLATFORM golang:alpine AS build-go
+
+ARG TARGETOS
+ARG TARGETARCH
 
 WORKDIR /app
 
-COPY backend/pyproject.toml backend/uv.lock* ./
+COPY go.mod go.sum ./
 
-RUN uv sync --no-dev --no-install-project
+RUN go mod download
 
-# Stage 3: Runtime
-FROM python:3.13-slim-bookworm AS runtime
+COPY . .
 
-WORKDIR /app
+RUN CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -o /server
 
-COPY --from=build-backend /app/.venv /app/.venv
-COPY backend/app/ ./app/
-COPY --from=build-frontend /app/frontend/dist ./static/
-COPY --from=ghcr.io/tarampampam/microcheck:1 /bin/httpcheck /bin/httpcheck
+FROM scratch
 
-ENV PATH="/app/.venv/bin:$PATH"
-ENV DB_PATH=/data/punchcard.db
+WORKDIR /
+
+COPY --from=build-go /server /server
+COPY --from=build-vue /app/frontend/dist /frontend/dist
 
 EXPOSE 8080
-VOLUME ["/data"]
 
-HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
-    CMD ["httpcheck", "http://localhost:8080/health"]
+COPY --from=ghcr.io/tarampampam/microcheck:1 /bin/httpcheck /bin/httpcheck
+HEALTHCHECK --interval=30s --timeout=3s --retries=3 --start-period=10s CMD ["httpcheck", "http://localhost:8080"]
 
-CMD ["python", "-m", "app.main"]
+ENTRYPOINT ["/server"]

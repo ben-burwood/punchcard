@@ -1,8 +1,6 @@
 node_modules/
-__pycache__/
-*.pyc
-.venv/
 *.db
-backend/static/
 frontend/dist/
 .env
+/server
+*.exe

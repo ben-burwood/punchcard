@@ -47,7 +47,7 @@
                         <tr v-for="job in items" :key="job.id">
                             <td class="font-medium">{{ job.name }}</td>
                             <td>
-                                <span :title="job.id" class="font-mono text-sm">{{ job.id.slice(0, 8) }}</span>
+                                <span :title="job.id" class="font-mono text-sm">{{ job.id }}</span>
                             </td>
                             <td class="text-sm">{{ formatDate(job.started_at) }}</td>
                             <td class="text-sm">{{ formatDate(job.stopped_at) }}</td>
