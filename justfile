@@ -4,11 +4,11 @@ default:
     just --list
 
 format:
-    Set-Location backend; ruff format
+    gofmt -w .
     Set-Location frontend; npx prettier . --write
 
 backend *args:
-    Set-Location backend; uv run python manage.py {{ args }}
+    go run . {{ args }}
 
 frontend *args:
     Set-Location frontend; npm run {{ args }}

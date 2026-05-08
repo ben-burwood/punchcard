@@ -4,7 +4,7 @@ Job Tracker Dashboard via API.
 
 ## Stack
 
-- **Backend**: Robyn + SQLAlchemy (SQLite)
+- **Backend**: Go (`net/http`) + SQLite (`modernc.org/sqlite`, pure Go)
 - **Frontend**: Vue + Tailwind CSS + daisyUI
 
 ## Quick Start
@@ -19,8 +19,7 @@ Dashboard available at `http://localhost:8080`. Set your API key in `.env` (see 
 
 ```bash
 # Backend
-cd backend
-PUNCHCARD_API_KEY=dev uv run python -m app.main
+PUNCHCARD_API_KEY=dev DASHBOARD_USER=admin DASHBOARD_PASSWORD=admin go run .
 
 # Frontend (separate terminal)
 cd frontend
