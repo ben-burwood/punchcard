@@ -8,7 +8,7 @@ RUN npm install
 
 COPY frontend/. .
 
-RUN npm run build-only
+RUN npm run build
 
 FROM --platform=$BUILDPLATFORM golang:alpine AS build-go
 
