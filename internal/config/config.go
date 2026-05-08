@@ -18,7 +18,7 @@ type Config struct {
 func Load() (Config, error) {
 	cfg := Config{
 		Port:         8080,
-		DBPath:       getenv("DB_PATH", "punchcard.db"),
+		DBPath:       getenv("DB_PATH", "/data/punchcard.db"),
 		APIKey:       os.Getenv("PUNCHCARD_API_KEY"),
 		DashUser:     os.Getenv("DASHBOARD_USER"),
 		DashPassword: os.Getenv("DASHBOARD_PASSWORD"),
